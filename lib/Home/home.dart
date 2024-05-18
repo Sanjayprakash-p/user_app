@@ -252,15 +252,15 @@ class _OrderPageState extends State<OrderPage> {
         setState(() {
           loading = true;
         });
-        String imageUrl = '';
-        if (_imageFile != null) {
-          final storageRef = FirebaseStorage.instance
-              .ref()
-              .child('orders')
-              .child('${DateTime.now().toIso8601String()}.jpg');
-          await storageRef.putFile(File(_imageFile!.path));
-          imageUrl = await storageRef.getDownloadURL();
-        }
+        // String imageUrl = '';
+        // if (_imageFile != null) {
+        //   final storageRef = FirebaseStorage.instance
+        //       .ref()
+        //       .child('orders')
+        //       .child('${DateTime.now().toIso8601String()}.jpg');
+        //   await storageRef.putFile(File(_imageFile!.path));
+        //   imageUrl = await storageRef.getDownloadURL();
+        // }
 
         // Uncomment to get the current location
         Position position = await Geolocator.getCurrentPosition(
@@ -273,9 +273,10 @@ class _OrderPageState extends State<OrderPage> {
           'preferred_date': _dateController.text.trim(),
           'preferred_time': _timeController.text.trim(),
           'special_instructions': _instructionsController.text.trim(),
-          'image_url': imageUrl,
+          // 'image_url': imageUrl,
           'location': GeoPoint(latitude, longitude),
           'user_id': FirebaseAuth.instance.currentUser!.uid,
+          'email_id': FirebaseAuth.instance.currentUser!.email,
         });
         setState(() {
           loading = false;
