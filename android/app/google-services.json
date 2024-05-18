@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "301809408234",
+    "project_id": "juicerapp-783b5",
+    "storage_bucket": "juicerapp-783b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301809408234:android:328add73d2e0a5b1889f93",
+        "android_client_info": {
+          "package_name": "com.example.user_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301809408234-j3nu42ale2u2kq8c94cafk7c0g4ef756.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user_app",
+            "certificate_hash": "a2e55c1c9ca700a963c670762f6e69650f0743b4"
+          }
+        },
+        {
+          "client_id": "301809408234-iorlrol07phpr6rrpvpf52i3d1vatq7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx-mVJRUeeIEh0k0aW1uTccTwcVyZGktQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301809408234-iorlrol07phpr6rrpvpf52i3d1vatq7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
